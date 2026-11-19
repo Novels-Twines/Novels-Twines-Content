@@ -1,0 +1,19 @@
+{
+  "id": "painted-skies",
+  "title": "Painted Skies",
+  "description": "A visual-story collection entry. Add the official colour pages and episode details when they are ready.",
+  "author": "Novels-Twines Studio",
+  "genre": [
+    "Fantasy"
+  ],
+  "cover": null,
+  "language": "en",
+  "status": "draft",
+  "contentType": "color-novel",
+  "createdAt": null,
+  "updatedAt": null,
+  "publishedAt": null,
+  "episodeIds": [
+    "painted-skies-episode-001"
+  ]
+}
