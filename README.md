@@ -7,7 +7,7 @@ This repository is the content library for the Novels-Twines website. Keep the w
 - Novel descriptions and author details.
 - Episode titles, summaries, and original episode text.
 - ColorNovel metadata and artwork references.
-- The public catalogue of approved, published content.
+- The public catalogue of approved, published content. Only complete stories with approved artwork (where applicable) belong in the public catalogue.
 
 Do not put website code, backend code, passwords, API keys, session tokens, or GitHub App private keys here.
 
@@ -158,7 +158,7 @@ Only after approval should the publishing process:
 3. Add the novel entry to `catalog/index.json` under `novels` or `colorNovels`.
 4. Merge the approved changes.
 
-The catalogue is the public index. Keep drafts and pending submissions out of it. Never mark work as published just to make it appear on the website.
+The catalogue is the public index. Keep drafts and pending submissions out of it. The episode JSON Schema validates the parsed YAML frontmatter object, not the Markdown source file itself. Never mark work as published just to make it appear on the website.
 
 ## 8. Update the catalogue
 
@@ -213,11 +213,11 @@ The public website loads the matching `novel.json` file, then loads the episode 
 - [ ] Draft/pending content is not in the public catalogue.
 - [ ] An authorized reviewer has approved the pull request.
 
-## 11. Demo content migrated from the website
+## 11. Starter records and publication status
 
-The `novels/` and `color-novels/` folders include the eight demo entries that were previously hardcoded in the website. Their descriptions, author names, genres, and episode titles were copied from the frontend. They are deliberately marked `draft`.
+The repository currently contains one starter novel record and one planned ColorNovel record. Their episode files are placeholders, not complete chapters. They are kept as `draft` and excluded from `catalog/index.json`, so the public website will not present them as finished stories.
 
-The website's old episode reader showed generic sample text, not complete official stories. Therefore, the migrated episode files are clearly marked as placeholders and do not invent story chapters. These demo records are not in the public catalogue and should not be treated as published novels.
+Replace the placeholder body with original, reviewed chapter text before submitting either record for publication. The ColorNovel also needs its own approved visual pages before it can be described as a finished visual-reading experience.
 
 ## 12. Security, ownership, and licensing
 

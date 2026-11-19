@@ -3,13 +3,17 @@
   "title": "NEW LIFE IN MINI-CARAVAN",
   "description": "An ongoing novel by Novels-Twines.",
   "author": "Novels-Twines",
-  "genre": ["Adventure"],
+  "genre": [
+    "Adventure"
+  ],
   "cover": null,
   "language": "en",
-  "status": "published",
+  "status": "draft",
   "contentType": "novel",
   "createdAt": null,
   "updatedAt": "2026-11-19T12:13:58Z",
-  "publishedAt": "2026-11-19T12:13:58Z",
-  "episodeIds": ["new-life-in-mini-caravan-episode-001"]
+  "publishedAt": null,
+  "episodeIds": [
+    "new-life-in-mini-caravan-episode-001"
+  ]
 }
