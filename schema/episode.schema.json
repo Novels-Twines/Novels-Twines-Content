@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Novels-Twines Episode Metadata",
+  "title": "Novels-Twines Episode Frontmatter",
+  "description": "Validate the YAML frontmatter after parsing it from an episode Markdown file. The Markdown body is stored after the closing frontmatter delimiter.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -8,8 +9,7 @@
     "novelId",
     "title",
     "order",
-    "status",
-    "file"
+    "status"
   ],
   "properties": {
     "id": {
@@ -41,10 +41,6 @@
         "published",
         "archived"
       ]
-    },
-    "file": {
-      "type": "string",
-      "pattern": "\\.md$"
     },
     "publishedAt": {
       "type": [
