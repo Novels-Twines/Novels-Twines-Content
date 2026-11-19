@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Novels-Twines Novel Metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "description",
+    "author",
+    "genre",
+    "status",
+    "contentType"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "genre": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "cover": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Repository-relative asset path or approved HTTPS image URL."
+    },
+    "language": {
+      "type": "string",
+      "default": "en"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "pending",
+        "published",
+        "archived"
+      ]
+    },
+    "contentType": {
+      "type": "string",
+      "enum": [
+        "novel",
+        "color-novel"
+      ]
+    },
+    "createdAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "publishedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "episodeIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  }
+}
