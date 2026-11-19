@@ -1,0 +1,15 @@
+{
+  "id": "your-novel-id",
+  "title": "Your Novel Title",
+  "description": "A short description of your original novel.",
+  "author": "Author Name",
+  "genre": ["Fantasy"],
+  "cover": null,
+  "language": "en",
+  "status": "draft",
+  "contentType": "novel",
+  "createdAt": null,
+  "updatedAt": null,
+  "publishedAt": null,
+  "episodeIds": []
+}
