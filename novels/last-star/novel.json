@@ -1,0 +1,21 @@
+{
+  "id": "last-star",
+  "title": "The Last Star",
+  "description": "At the edge of a fading kingdom, a quiet mapmaker discovers that the stars are disappearing one by one. A strange message points toward a place no map has ever shown.",
+  "author": "Novels-Twines Studio",
+  "genre": [
+    "Fantasy"
+  ],
+  "cover": null,
+  "language": "en",
+  "status": "draft",
+  "contentType": "novel",
+  "createdAt": null,
+  "updatedAt": null,
+  "publishedAt": null,
+  "episodeIds": [
+    "last-star-episode-001",
+    "last-star-episode-002",
+    "last-star-episode-003"
+  ]
+}

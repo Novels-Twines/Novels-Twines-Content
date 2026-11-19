@@ -1,0 +1,19 @@
+{
+  "id": "wildwood",
+  "title": "Beyond the Wildwood",
+  "description": "A trail appears after a summer storm, leading two friends into an old forest filled with forgotten paths and unexpected allies.",
+  "author": "E. North",
+  "genre": [
+    "Adventure"
+  ],
+  "cover": null,
+  "language": "en",
+  "status": "draft",
+  "contentType": "novel",
+  "createdAt": null,
+  "updatedAt": null,
+  "publishedAt": null,
+  "episodeIds": [
+    "wildwood-episode-001"
+  ]
+}

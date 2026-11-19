@@ -1,40 +1,226 @@
 # Novels-Twines Content
 
-This repository stores the structured content that the Novels-Twines website can display after publication.
+This repository is the content library for the Novels-Twines website. Keep the website interface in [Creative-NovelS](https://github.com/Novels-Twines/Creative-NovelS), backend code in [Novels-Twines-Backend](https://github.com/Novels-Twines/Novels-Twines-Backend), and novels/episodes/artwork here.
 
-## Repository layout
+## 1. What belongs here?
 
-- `catalog/index.json` — list of published novels and ColorNovels.
-- `schema/` — JSON Schemas for validating novel and episode metadata.
-- `templates/` — starter files for new novels and episodes.
-- `novels/<novel-id>/` — standard novel metadata and episode files.
-- `color-novels/<novel-id>/` — ColorNovels metadata and episode files.
-- `assets/` — artwork references and asset organization guidance.
+- Novel descriptions and author details.
+- Episode titles, summaries, and original episode text.
+- ColorNovel metadata and artwork references.
+- The public catalogue of approved, published content.
 
-## Content status
+Do not put website code, backend code, passwords, API keys, session tokens, or GitHub App private keys here.
 
-Only content explicitly marked `published` and included in the catalog should be displayed to readers. Drafts and pending submissions should remain in the application/backend until approved.
+## 2. Repository folders
 
-The catalog starts empty. The website's current demo stories are not copied here and should not be treated as published works.
+```text
+catalog/
+  index.json                 # Public catalogue (published entries only)
+novels/
+  <novel-id>/
+    novel.json               # Novel details
+    episodes/
+      episode-001.md         # Episode 1 text and metadata
+      episode-002.md         # Episode 2 text and metadata
+color-novels/
+  <color-novel-id>/
+    novel.json               # ColorNovel details
+    episodes/
+      episode-001.md
+assets/
+  ...                        # Cover images and other approved artwork
+schema/
+  novel.schema.json
+  episode.schema.json
+templates/
+  novel.metadata.template.json
+  color-novel.metadata.template.json
+  episode-001.template.md
+```
 
-## Suggested publication flow
+Use a stable ID made of lowercase letters, numbers, and hyphens. Example: `the-last-star`. Do not change an ID after publishing because links may depend on it.
 
-1. A Creator drafts a novel or episode in the application.
-2. The backend validates metadata and stores the submission.
-3. An Admin reviews and approves the submission.
-4. The backend's publishing integration writes the approved files and updates the catalog.
-5. The website reads the published catalog and content.
+## 3. Add a new novel on GitHub (step by step)
 
-Do not place passwords, session tokens, API keys, GitHub App private keys, or other secrets in this repository.
+You can do this in the GitHub website; you do not need Git commands.
 
-## IDs and file naming
+1. Open this repository: https://github.com/Novels-Twines/Novels-Twines-Content
+2. Select the branch dropdown (usually showing `main`) and create a branch such as `content/add-the-example-novel`. Do not upload directly to `main`.
+3. Open the `novels` folder. If it does not exist yet, create it by creating a file named `novels/README.md` first.
+4. Choose **Add file → Create new file**.
+5. In the filename box, enter `novels/your-novel-id/novel.json`. GitHub creates the folders from the path.
+6. Copy the structure from `templates/novel.metadata.template.json` and replace the example values:
+   - `id`: same as the folder name, for example `the-example-novel`.
+   - `title`: the novel title readers will see.
+   - `description`: a short, accurate summary.
+   - `author`: the credited author or pen name.
+   - `genre`: an array, for example `["Fantasy", "Adventure"]`.
+   - `cover`: `null` until an approved cover is added, or a repository-relative asset path.
+   - `status`: keep it as `"draft"` while preparing the work.
+   - `contentType`: keep it as `"novel"`.
+   - `episodeIds`: list the IDs of the episodes you add, such as `["the-example-novel-episode-001"]`.
+7. Select **Commit changes** and commit to your feature branch.
 
-Use stable lowercase IDs with hyphens, such as `the-example-novel`. Episode files should use ordered names such as `episode-001.md`. Avoid changing an existing ID after publication because URLs and references may depend on it.
+Example metadata:
 
-## Artwork
+```json
+{
+  "id": "the-example-novel",
+  "title": "The Example Novel",
+  "description": "A short description of the story.",
+  "author": "Author Name",
+  "genre": ["Fantasy"],
+  "cover": null,
+  "language": "en",
+  "status": "draft",
+  "contentType": "novel",
+  "createdAt": null,
+  "updatedAt": null,
+  "publishedAt": null,
+  "episodeIds": ["the-example-novel-episode-001"]
+}
+```
 
-Store small, optimized assets under `assets/` or use an approved image-storage service. Avoid committing large originals. Record asset paths or trusted URLs in metadata.
+## 4. Add an episode
 
-## Rights and licensing
+1. Open the same branch.
+2. Create a file named `novels/your-novel-id/episodes/episode-001.md`.
+3. Copy the format from `templates/episode-001.template.md`.
+4. Replace the frontmatter values:
+   - `id`: unique episode ID, for example `the-example-novel-episode-001`.
+   - `novelId`: the parent novel's ID; it must match the folder and `novel.json`.
+   - `title`: episode title.
+   - `order`: episode number starting at 1.
+   - `summary`: a short episode summary.
+   - `status`: `draft` until approved.
+   - `publishedAt`: leave `null` until publication.
+5. Write the original episode below the second `---` line. Do not paste copyrighted work unless you have permission to publish it.
+6. Commit the file to your feature branch.
+7. Update `episodeIds` in `novel.json` so it includes the new episode ID.
 
-The repository currently contains an MIT LICENSE. Review that license before adding original novels, illustrations, or other creative works. Do not assume that the repository's software-oriented license is appropriate for creative content. Obtain the rights holder's decision before publishing or changing licensing terms.
+Example episode:
+
+```markdown
+---
+id: the-example-novel-episode-001
+novelId: the-example-novel
+title: Episode 1 — The Beginning
+order: 1
+summary: The main character discovers an unusual clue.
+status: draft
+publishedAt: null
+---
+
+# Episode 1 — The Beginning
+
+Write your original episode text here.
+```
+
+For the next episode, use `episode-002.md`, set `order` to `2`, and give it a new unique ID. Keep numbering continuous.
+
+## 5. Add a ColorNovel
+
+Follow the same process, but create the metadata file at:
+
+`color-novels/your-color-novel-id/novel.json`
+
+Copy `templates/color-novel.metadata.template.json`. Set `contentType` to `"color-novel"`. Put its episode Markdown files in:
+
+`color-novels/your-color-novel-id/episodes/`
+
+Add artwork under `assets/` and use a relative path in the `cover` field when ready. Use descriptive filenames such as `assets/covers/the-example-color-novel.webp`.
+
+## 6. Upload artwork
+
+1. Prepare an optimized image (WebP or JPEG is recommended).
+2. In GitHub, open or create the `assets/covers/` folder.
+3. Select **Add file → Upload files**.
+4. Drag the image into the upload area.
+5. Commit it to your feature branch.
+6. Set the matching relative path in the novel metadata, for example `"cover": "assets/covers/the-example-novel.webp"`.
+
+Only upload artwork you own or have permission to use. Avoid very large original files.
+
+## 7. Review and publish workflow
+
+The statuses mean:
+
+- `draft`: work in progress; not public.
+- `pending`: submitted for review; not public.
+- `published`: approved and ready for readers.
+- `archived`: no longer actively published.
+
+**Important:** creating or uploading files does not automatically publish a story. Open a pull request from your feature branch to `main`. An authorized reviewer must check the metadata, episode files, artwork rights, and completeness before approving it.
+
+Only after approval should the publishing process:
+1. Set the novel and approved episode statuses to `published`.
+2. Set publication timestamps.
+3. Add the novel entry to `catalog/index.json` under `novels` or `colorNovels`.
+4. Merge the approved changes.
+
+The catalogue is the public index. Keep drafts and pending submissions out of it. Never mark work as published just to make it appear on the website.
+
+## 8. Update the catalogue
+
+The catalogue currently has this shape:
+
+```json
+{
+  "version": 1,
+  "updatedAt": null,
+  "novels": [],
+  "colorNovels": []
+}
+```
+
+When content is approved for publication, add the published entry to the correct array. Keep IDs unique and make sure each catalogue entry points to a matching metadata file. The website integration reads this catalogue from the Content repository's `main` branch. It accepts an ID string or an object with an `id` field; use the object format below for clarity. Do not add a draft or pending entry.
+
+Example after a novel and at least one episode have been approved:
+
+```json
+{
+  "version": 1,
+  "updatedAt": "2026-11-19T12:00:00Z",
+  "novels": [
+    { "id": "the-example-novel" }
+  ],
+  "colorNovels": [
+    { "id": "the-example-color-novel" }
+  ]
+}
+```
+
+The public website loads the matching `novel.json` file, then loads the episode Markdown files in episode order. It displays only novels whose metadata status is `published` and only episodes whose frontmatter status is `published`. Keep unpublished episodes out of the public reader by leaving their status as `draft` or `pending`. The catalogue should contain only approved, published novel IDs.
+
+## 9. Create a pull request
+
+1. Open the repository on GitHub and switch to your feature branch.
+2. Select **Contribute → Open pull request** (or the **Compare & pull request** button).
+3. Set the base branch to `main` and compare branch to your feature branch.
+4. Give the PR a clear title, such as `Add The Example Novel and Episode 1`.
+5. In the description, summarize the novel, episodes, artwork, and status.
+6. Create the pull request and wait for review.
+7. Fix requested changes on the same feature branch. Do not merge until the authorized reviewer approves.
+
+## 10. Checklist before requesting publication
+
+- [ ] Novel metadata follows `schema/novel.schema.json`.
+- [ ] Each episode follows the episode frontmatter format and `schema/episode.schema.json`.
+- [ ] Novel ID, folder name, `novelId`, and episode IDs match.
+- [ ] Episode order is continuous and `episodeIds` is up to date.
+- [ ] Text is original or you have permission to publish it.
+- [ ] Artwork is authorized and its path is correct.
+- [ ] Draft/pending content is not in the public catalogue.
+- [ ] An authorized reviewer has approved the pull request.
+
+## 11. Demo content migrated from the website
+
+The `novels/` and `color-novels/` folders include the eight demo entries that were previously hardcoded in the website. Their descriptions, author names, genres, and episode titles were copied from the frontend. They are deliberately marked `draft`.
+
+The website's old episode reader showed generic sample text, not complete official stories. Therefore, the migrated episode files are clearly marked as placeholders and do not invent story chapters. These demo records are not in the public catalogue and should not be treated as published novels.
+
+## 12. Security, ownership, and licensing
+
+Never commit passwords, API keys, access tokens, session cookies, or GitHub App private keys. The backend must handle privileged publishing credentials server-side.
+
+This repository currently has an MIT LICENSE. That license may not be suitable for creative writing or artwork. Confirm the rights holder's intended license before publishing original content; do not assume the MIT license grants permission to reuse stories or illustrations.
