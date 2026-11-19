@@ -1,0 +1,19 @@
+{
+  "id": "crimson-garden",
+  "title": "The Crimson Garden",
+  "description": "A colour-focused story entry ready for its artwork and chapter sequence.",
+  "author": "Novels-Twines Studio",
+  "genre": [
+    "Mystery"
+  ],
+  "cover": null,
+  "language": "en",
+  "status": "draft",
+  "contentType": "color-novel",
+  "createdAt": null,
+  "updatedAt": null,
+  "publishedAt": null,
+  "episodeIds": [
+    "crimson-garden-episode-001"
+  ]
+}
