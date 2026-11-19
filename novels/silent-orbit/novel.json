@@ -1,0 +1,20 @@
+{
+  "id": "silent-orbit",
+  "title": "The Silent Orbit",
+  "description": "A distant research station receives a signal that should not exist. As the crew follows its source, familiar rules begin to change.",
+  "author": "Mira Vale",
+  "genre": [
+    "Science Fiction"
+  ],
+  "cover": null,
+  "language": "en",
+  "status": "draft",
+  "contentType": "novel",
+  "createdAt": null,
+  "updatedAt": null,
+  "publishedAt": null,
+  "episodeIds": [
+    "silent-orbit-episode-001",
+    "silent-orbit-episode-002"
+  ]
+}
