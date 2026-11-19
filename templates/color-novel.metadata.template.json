@@ -1,0 +1,15 @@
+{
+  "id": "your-color-novel-id",
+  "title": "Your ColorNovel Title",
+  "description": "A short description of this ColorNovel.",
+  "author": "Author Name",
+  "genre": ["Drama"],
+  "cover": null,
+  "language": "en",
+  "status": "draft",
+  "contentType": "color-novel",
+  "createdAt": null,
+  "updatedAt": null,
+  "publishedAt": null,
+  "episodeIds": []
+}
