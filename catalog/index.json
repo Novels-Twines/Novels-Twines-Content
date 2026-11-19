@@ -3,12 +3,12 @@
   "updatedAt": null,
   "novels": [
     {
-      "new-life-in-mini-caravan"
+      "id":"new-life-in-mini-caravan"
     }
   ],
   "colorNovels": [
     {
-      "new-life-in-mini-caravan-color"
+      "id":"new-life-in-mini-caravan-color"
     }
   ]
 }
