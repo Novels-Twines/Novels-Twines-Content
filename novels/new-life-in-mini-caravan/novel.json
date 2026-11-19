@@ -1,0 +1,19 @@
+{
+  "id": "new-life-in-mini-caravan",
+  "title": "NEW LIFE IN MINI-CARAVAN",
+  "description": "A sample novel entry added to demonstrate the Novels-Twines content upload process.",
+  "author": "Novels-Twines",
+  "genre": [
+    "Adventure"
+  ],
+  "cover": null,
+  "language": "en",
+  "status": "draft",
+  "contentType": "novel",
+  "createdAt": null,
+  "updatedAt": null,
+  "publishedAt": null,
+  "episodeIds": [
+    "new-life-in-mini-caravan-episode-001"
+  ]
+}
