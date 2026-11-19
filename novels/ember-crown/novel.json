@@ -1,0 +1,20 @@
+{
+  "id": "ember-crown",
+  "title": "The Ember Crown",
+  "description": "A young keeper inherits a mysterious crown and a duty that has been hidden for generations.",
+  "author": "S. Vale",
+  "genre": [
+    "Fantasy"
+  ],
+  "cover": null,
+  "language": "en",
+  "status": "draft",
+  "contentType": "novel",
+  "createdAt": null,
+  "updatedAt": null,
+  "publishedAt": null,
+  "episodeIds": [
+    "ember-crown-episode-001",
+    "ember-crown-episode-002"
+  ]
+}
