@@ -173,7 +173,24 @@ The catalogue currently has this shape:
 }
 ```
 
-When content is approved for publication, add the published entry to the correct array. Keep IDs unique and make sure each catalogue entry points to a matching metadata file. The website integration will use this catalogue as its list of public content. Do not add a draft or pending entry.
+When content is approved for publication, add the published entry to the correct array. Keep IDs unique and make sure each catalogue entry points to a matching metadata file. The website integration reads this catalogue from the Content repository's `main` branch. It accepts an ID string or an object with an `id` field; use the object format below for clarity. Do not add a draft or pending entry.
+
+Example after a novel and at least one episode have been approved:
+
+```json
+{
+  "version": 1,
+  "updatedAt": "2026-11-19T12:00:00Z",
+  "novels": [
+    { "id": "the-example-novel" }
+  ],
+  "colorNovels": [
+    { "id": "the-example-color-novel" }
+  ]
+}
+```
+
+The public website loads the matching `novel.json` file, then loads the episode Markdown files in episode order. It displays only novels whose metadata status is `published` and only episodes whose frontmatter status is `published`. Keep unpublished episodes out of the public reader by leaving their status as `draft` or `pending`. The catalogue should contain only approved, published novel IDs.
 
 ## 9. Create a pull request
 
