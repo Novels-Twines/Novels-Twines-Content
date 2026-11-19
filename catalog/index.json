@@ -1,14 +1,6 @@
 {
   "version": 1,
   "updatedAt": null,
-  "novels": [
-    {
-      "id": "new-life-in-mini-caravan"
-    }
-  ],
-  "colorNovels": [
-    {
-      "id": "new-life-in-mini-caravan-color"
-    }
-  ]
+  "novels": [],
+  "colorNovels": []
 }
