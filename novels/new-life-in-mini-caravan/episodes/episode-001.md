@@ -1,6 +1,6 @@
-Chapter 01 – A Secret Discovery
+Chapter 01 – The Van That Nobody Wanted
 
-«Every New Life Begins Somewhere.»
+«Every New Life Begins With Some Memories.»
 
 Genre: Adventure | Friendship | Road Trip | Emotional Drama
 Main Characters: Jayanth, Akhil
@@ -8,7 +8,7 @@ Featured Vehicle: Mahindra Bolero Plus / XL 9-Seater
 Chapter Theme: Dreams, Secrets, Friendship and New Beginnings
 
 
-1.	An Unspoken Dream
+1. An Unspoken Dream
 
 The afternoon was moving slowly.
 
@@ -35,7 +35,7 @@ Not his friends. Not his relatives. Nobody.
 For now, it was his little secret.
 
 
-2.	An Ordinary Meeting
+2. An Ordinary Meeting
 
 One afternoon, Jayanth happened to meet his friend Akhil near a shopping area.
 
@@ -72,7 +72,7 @@ And most importantly, he had no idea that Jayanth was secretly planning somethin
 To Akhil, it was just another ordinary afternoon with his friend.
 
 
-3.	The Unexpected Sight
+3. The Unexpected Sight
 
 After almost an hour of conversation, they stopped near a newly opened car rental shop.
 
@@ -109,7 +109,7 @@ But Akhil was standing beside him.
 Jayanth quickly controlled his excitement and continued pretending to listen.
 
 
-4.	Akhil Notices Something Strange
+4. Akhil Notices Something Strange
 
 Akhil: “Orey! What happened to you?”
 
@@ -152,7 +152,7 @@ And he definitely didn’t want anyone interfering with his plans before he had 
 So he continued the conversation as if nothing had happened.
 
 
-5.	An Unexpected Phone Call
+5. An Unexpected Phone Call
 
 After spending some more time together, Akhil’s phone started ringing.
 
@@ -205,7 +205,7 @@ Jayanth (thinking):
 “Finally… let’s see what you’ve got.”
 
 
-6.	The Secret Deal
+6. The Secret Deal
 
 Jayanth walked into the car rental office.
 
@@ -268,7 +268,7 @@ And Akhil?
 He was completely unaware that anything had happened.
 
 
-7.	A New Beginning
+7. A New Beginning
 
 After completing the necessary checks and purchase formalities, Jayanth arranged a tow truck to transport the Bolero to a nearby automobile garage.
 
@@ -309,7 +309,7 @@ Jayanth nodded.
 The project had officially begun.
 
 
-8.	Meanwhile…
+8. Meanwhile…
 
 Somewhere else in the city, Akhil had reached home.
 
@@ -348,15 +348,15 @@ End of Chapter 01
 
 «”Everyone saw an old Bolero that nobody wanted. But Jayanth saw the beginning of a new life.”»
 
-To Be Continued…
 
+To Be Continued…
 
 Chapter 02 – The Real Condition
 
 The garage inspection begins. But what will happen when Jayanth discovers the actual condition of the old Bolero? And how much will his dream cost?
 
 
-Story Continuity
+****Story Continuity
 
 Element| Current Status
 Jayanth’s caravan dream| Secret
@@ -365,7 +365,5 @@ Vehicle| Old Bolero Plus / XL 9-Seater
 Purchase| Tentative deal completed, subject to checks
 Restoration| Just beginning
 Caravan design| Initial drawings prepared
-Next event| Mechanical inspection
-
-Important: Akhil must remain unaware of the purchase and caravan project until the planned reveal in a future chapter.
+Next event| Mechanical inspection**
 
