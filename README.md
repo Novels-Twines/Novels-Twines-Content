@@ -213,11 +213,15 @@ The public website loads the matching `novel.json` file, then loads the episode 
 - [ ] Draft/pending content is not in the public catalogue.
 - [ ] An authorized reviewer has approved the pull request.
 
-## 11. Starter records and publication status
+## 11. Current starter records and publication status
 
-The repository currently contains one starter novel record and one planned ColorNovel record. Their episode files are placeholders, not complete chapters. They are kept as `draft` and excluded from `catalog/index.json`, so the public website will not present them as finished stories.
+The repository includes the starter novel **NEW LIFE IN MINI-CARAVAN** and a planned ColorNovel record. The normal novel's metadata is currently marked `published` and its ID is included in `catalog/index.json`, so the website can list the novel.
 
-Replace the placeholder body with original, reviewed chapter text before submitting either record for publication. The ColorNovel also needs its own approved visual pages before it can be described as a finished visual-reading experience.
+Its first episode, `novels/new-life-in-mini-caravan/episodes/episode-001.md`, is still marked `draft` and contains placeholder text, not a complete chapter. The website intentionally hides this episode from the public episode list and reader. This means the novel may appear in the catalogue with **zero published episodes** until a complete chapter is written, reviewed, and approved.
+
+The ColorNovel starter record is not part of the public catalogue. It must have complete original story content and approved visual pages before publication.
+
+Do not change an episode to `published` simply to make it appear on the website. Replace placeholder content with the author's complete original work, review it, and follow the publication workflow above.
 
 ## 12. Security, ownership, and licensing
 
