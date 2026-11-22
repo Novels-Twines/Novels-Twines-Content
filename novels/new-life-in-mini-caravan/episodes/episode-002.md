@@ -3,9 +3,9 @@ id: new-life-in-mini-caravan-episode-002
 novelId: new-life-in-mini-caravan
 title: Demo Episode 2 — The Garage Inspection
 order: 2
-summary: A demonstration published showing the correct structure for a second episode. Replace this sample with your completed original chapter before requesting publication.
-status: published
-publishedAt: 16:29
+summary: A demonstration draft showing the correct structure for a second episode. Replace this sample with your completed original chapter before requesting publication.
+status: draft
+publishedAt: NULL
 ---
 
 # Demo Episode 2 — The Garage Inspection
