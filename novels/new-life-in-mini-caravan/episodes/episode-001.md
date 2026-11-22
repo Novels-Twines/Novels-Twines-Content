@@ -1,3 +1,13 @@
+---
+id: new-life-in-mini-caravan-episode-001
+novelId: new-life-in-mini-caravan
+title: The Van That Nobody Wanted
+order: 1
+summary: Jayanth quietly searches for a vehicle that could become his future caravan. A chance meeting with Akhil and an unexpected sight bring his secret dream one step closer.
+status: published
+publishedAt: "2026-11-22T00:00:00Z"
+---
+
 Chapter 01 – The Van That Nobody Wanted
 
 «Every New Life Begins With Some Memories.»
