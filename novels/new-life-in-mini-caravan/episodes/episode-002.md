@@ -1,11 +1,11 @@
 ---
 id: new-life-in-mini-caravan-episode-002
 novelId: new-life-in-mini-caravan
-title: Demo Episode 2 — The Garage Inspection
+title: The Secret Hands Behind the Build
 order: 2
 summary: "Sometimes, the best friendship isn't about knowing every secret. It's about quietly supporting someone's dream."
-status: draft
-publishedAt: NULL
+status: published
+publishedAt: "2026-11-22T00:00:00Z"
 ---
 
 # Episode 02 – The Secret Hands Behind the Build
@@ -326,4 +326,3 @@ It was slowly becoming something neither of them had imagined when they first sa
 
 Jayanth looked at the Bolero and smiled. The dream was still a long way from becoming reality, but he had learned something important: every good project begins with patience and planning.
 
---- demonstration text with your complete Episode 2 before submitting it for review. Keep the status as `draft` until it is ready and approved.*
