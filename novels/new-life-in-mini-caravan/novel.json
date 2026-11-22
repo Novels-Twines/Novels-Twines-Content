@@ -6,12 +6,12 @@
   "genre": [
     "Adventure"
   ],
-  "cover": null,
+  "cover": "assets/covers/new-life-in-mini-caravan.jpg.jpeg",
   "language": "en",
   "status": "published",
   "contentType": "novel",
   "createdAt": null,
-  "updatedAt": "2026-11-22T16:00:00Z",
+  "updatedAt": "2026-11-22T19:00:00Z",
   "publishedAt": "2026-11-19T13:35:00Z",
   "episodeIds": [
     "new-life-in-mini-caravan-episode-001",
