@@ -11,9 +11,10 @@
   "status": "published",
   "contentType": "novel",
   "createdAt": null,
-  "updatedAt": "2026-11-19T13:35:00Z",
+  "updatedAt": "2026-11-22T00:00:00Z",
   "publishedAt": "2026-11-19T13:35:00Z",
   "episodeIds": [
-    "new-life-in-mini-caravan-episode-001"
+    "new-life-in-mini-caravan-episode-001",
+    "new-life-in-mini-caravan-episode-002"
   ]
 }
